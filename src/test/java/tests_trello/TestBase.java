@@ -15,7 +15,7 @@ public class TestBase {
     protected static ApplicationManager app = new ApplicationManager();
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp() throws InterruptedException {
         app.init();
 
     }

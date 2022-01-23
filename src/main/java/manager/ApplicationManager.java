@@ -14,8 +14,7 @@ public class ApplicationManager {
     UserHelper user;
 
 
-
-    public void init() {
+    public void init() throws InterruptedException {
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
         wd = new ChromeDriver();
@@ -24,8 +23,9 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.navigate().to("https://trello.com/");
 
-        user= new UserHelper(wd);
-        board= new BoardHelper(wd);
+        user = new UserHelper(wd);
+        board = new BoardHelper(wd);
+        user.login("juliakliot.jk@gmail.com", "misha240613");
     }
 
     public void stop() {

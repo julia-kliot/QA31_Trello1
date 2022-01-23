@@ -48,4 +48,25 @@ public class BoardHelper extends HelperBase{
         return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
 
     }
+
+    public void clickOnFirstBoard() {
+        click(By.cssSelector(".boards-page-board-section-list-item"));
+
+    }
+
+    public void openSideBoardMenu() {
+        click(By.cssSelector(".js-show-sidebar"));
+    }
+
+    public void openMore() {
+        click(By.cssSelector(".js-open-more"));
+    }
+
+    public void closeBoard() throws InterruptedException {
+        click(By.cssSelector(".js-close-board"));
+        click(By.cssSelector(".js-confirm"));
+        click(By.cssSelector("[data-test-id='close-board-delete-board-button']"));
+        Thread.sleep(5000);
+        click(By.cssSelector("[data-test-id='close-board-delete-board-confirm-button']"));
+    }
 }

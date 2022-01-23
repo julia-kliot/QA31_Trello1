@@ -17,6 +17,6 @@ public class BoardCreation extends TestBase {
         app.getBoard().returnToHomePage();
 
         int boardCountAfterCreation= app.getBoard().getBoardCount();
-        Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation+1 );
+        Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
     }
 }

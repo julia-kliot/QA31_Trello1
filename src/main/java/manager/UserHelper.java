@@ -1,5 +1,6 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,27 +22,27 @@ public class UserHelper extends HelperBase{
         click(By.cssSelector("#login-submit"));
     }
 
-    public void fillLoginForm() {
-        type(By.cssSelector("#user"), "juliakliot.jk@gmail.com");
+
+
+
+
+    public void fillLoginForm(String email, String password) throws InterruptedException {
+        type(By.cssSelector("#user"), email);
         click(By.cssSelector("#login"));
-        type(By.cssSelector("#password"),"misha240613");
+        type(By.name("password"), password);
+    }
+    public void fillLoginForm(User user) throws InterruptedException {
+        type(By.cssSelector("#user"), user.getEmail());
+        Thread.sleep(5000);
+        click(By.cssSelector("#login"));
+        type(By.name("password"), user.getPassword());
+
     }
 
-    @Test(enabled = false)
-    public void loginTest2() {
-
-        initLogin();
-        type(By.cssSelector("#user"), "juliakliot.jk@gmail.com");
-        click(By.cssSelector("#login"));
-        click(By.cssSelector(".dlMUdg"));
-        type(By.cssSelector("#password"),"misha240613");
-        submitLogin();
-
-
-    }
     public void initLogin() {
         click(By.cssSelector("[href='/login']"));
     }
+
     public void logout(){
         click(By.cssSelector("[data-test-id='header-member-menu-button'"));
         click(By.cssSelector("[data-test-id='header-member-menu-logout']"));
@@ -51,5 +52,16 @@ public class UserHelper extends HelperBase{
 
     public boolean isLogged(){
         return  wd.findElements(By.cssSelector("[data-test-id='header-member-menu-button'")).size()>0;
+    }
+    public void login(String email, String password) throws InterruptedException {
+        click(By.cssSelector("[href='/login']"));
+        type(By.cssSelector("#user"), email);
+        Thread.sleep(5000);
+        click(By.cssSelector("#login"));
+        type(By.name("password"),password);
+        click(By.id("login-submit"));
+        Thread.sleep(20000);
+
+
     }
 }
