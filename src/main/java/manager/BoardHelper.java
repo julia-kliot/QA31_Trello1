@@ -1,5 +1,6 @@
 package manager;
 
+import models.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
@@ -18,9 +19,13 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("[aria-label='BoardIcon']"));
 
     }
-    public void fillBoardCreationForm(){
-        type(By.cssSelector("[data-test-id='create-board-title-input']"), "testQa31");
+    //public void fillBoardCreationForm(String boardName){
+       // type(By.cssSelector("[data-test-id='create-board-title-input']"), boardName);
+    //}
+    public void fillBoardCreationForm (Board board){
+        type(By.cssSelector("[data-test-id='create-board-title-input']"),board.getTitle());
     }
+
     public void scrollDownTheForm(){
         Actions action = new Actions(wd);
         WebElement container = wd.findElement(By.cssSelector("[data-test-id='header-create-menu-popover']"));
@@ -33,7 +38,7 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("[data-test-id='create-board-submit-button']"));
     }
     public boolean isCreated(){
-        WebDriverWait wait= new WebDriverWait(wd,10);
+        WebDriverWait wait= new WebDriverWait(wd,20);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".list-name-input"))));
         return wd.findElement(By.cssSelector(".list-name-input")).isDisplayed();
     }
@@ -41,13 +46,13 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("._9Bfh6AVH84yAZe"));
     }
      public int getBoardCount(){
-        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-recentlyViewedBoards();
+        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size();
      }
 
-    public int recentlyViewedBoards(){
-        return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
+   // public int recentlyViewedBoards(){
+       // return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
 
-    }
+   // }
 
     public void clickOnFirstBoard() {
         click(By.cssSelector(".boards-page-board-section-list-item"));
@@ -66,7 +71,7 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector(".js-close-board"));
         click(By.cssSelector(".js-confirm"));
         click(By.cssSelector("[data-test-id='close-board-delete-board-button']"));
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         click(By.cssSelector("[data-test-id='close-board-delete-board-confirm-button']"));
     }
 }

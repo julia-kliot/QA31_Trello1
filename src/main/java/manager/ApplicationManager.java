@@ -12,6 +12,8 @@ public class ApplicationManager {
 
     BoardHelper board;
     UserHelper user;
+    ListHelper list;
+    CardHelper card;
 
 
     public void init() throws InterruptedException {
@@ -25,6 +27,9 @@ public class ApplicationManager {
 
         user = new UserHelper(wd);
         board = new BoardHelper(wd);
+        list = new ListHelper(wd);
+        card = new CardHelper(wd);
+
         user.login("juliakliot.jk@gmail.com", "misha240613");
     }
 
@@ -39,5 +44,13 @@ public class ApplicationManager {
 
     public UserHelper getUser() {
         return user;
+    }
+
+    public ListHelper getList() {
+        return list;
+    }
+
+    public CardHelper getCard() {
+        return card;
     }
 }
