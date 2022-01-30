@@ -14,6 +14,7 @@ public class ApplicationManager {
     UserHelper user;
     ListHelper list;
     CardHelper card;
+    AtlassianHelper atlassian;
 
 
     public void init() throws InterruptedException {
@@ -29,6 +30,7 @@ public class ApplicationManager {
         board = new BoardHelper(wd);
         list = new ListHelper(wd);
         card = new CardHelper(wd);
+        atlassian = new AtlassianHelper(wd);
 
         user.login("juliakliot.jk@gmail.com", "misha240613");
     }
@@ -36,6 +38,10 @@ public class ApplicationManager {
     public void stop() {
         wd.close();
         wd.quit();
+    }
+
+    public AtlassianHelper getAtlassian() {
+        return atlassian;
     }
 
     public BoardHelper getBoard() {
@@ -53,4 +59,9 @@ public class ApplicationManager {
     public CardHelper getCard() {
         return card;
     }
+
+    public String getURL(){
+        return wd.getCurrentUrl();
+    }
 }
+
