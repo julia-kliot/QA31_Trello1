@@ -22,6 +22,7 @@ public void preConditions() {
     public void loginTest1() throws InterruptedException {
 //User user= new User().withEmail("juliakliot.jk@gmail.com").withPassword("misha240613");
         User user = User.builder().email("juliakliot.jk@gmail.com").password("misha240613").build();
+        logger.info("Test Login Positive 1" + user.getEmail()+" "+user.getPassword());
         app.getUser().initLogin();
         //app.getUser().fillLoginForm("juliakliot.jk@gmail.com", "misha240613");
         app.getUser().fillLoginForm(user);
