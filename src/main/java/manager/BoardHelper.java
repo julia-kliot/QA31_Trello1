@@ -39,20 +39,20 @@ public class BoardHelper extends HelperBase{
     }
     public boolean isCreated(){
         WebDriverWait wait= new WebDriverWait(wd,20);
-        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".list-name-input"))));
-        return wd.findElement(By.cssSelector(".list-name-input")).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".js-add-list"))));
+        return wd.findElement(By.cssSelector(".js-add-list")).isDisplayed();
     }
     public void returnToHomePage(){
         click(By.cssSelector("._9Bfh6AVH84yAZe"));
     }
      public int getBoardCount(){
-        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size();
+        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-1-recentlyViewedBoards();
      }
 
-   // public int recentlyViewedBoards(){
-       // return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
+   public int recentlyViewedBoards(){
+       return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
 
-   // }
+   }
 
     public void clickOnFirstBoard() {
         click(By.cssSelector(".boards-page-board-section-list-item"));
@@ -73,5 +73,9 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("[data-test-id='close-board-delete-board-button']"));
         Thread.sleep(10000);
         click(By.cssSelector("[data-test-id='close-board-delete-board-confirm-button']"));
+    }
+
+    public void clickontheBoard() {
+        click(By.cssSelector(".board-tile-details"));
     }
 }
