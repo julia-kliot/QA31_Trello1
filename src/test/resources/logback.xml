@@ -1,7 +1,7 @@
 <configuration>
     <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>Log/log-${bySecond}.log</file>
+        <file>Logs/log-${bySecond}.log</file>
 
         <!-- set immediateFlush to false for much higher logging throughput -->
         <immediateFlush>true</immediateFlush>
