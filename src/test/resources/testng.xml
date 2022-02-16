@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="log">
+    <groups>
+        <run>
+            <include name="logs"/>
+        </run>
+    </groups>
+    <test name="log">
+        <classes>
+            <class name="tests_trello.Login"/>
+            <class name="tests_trello.BoardCreation"/>
+            <class name="tests_trello.CardCreation"/>
+        </classes>
+    </test>
+</suite>

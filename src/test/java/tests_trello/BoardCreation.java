@@ -39,6 +39,26 @@ public class BoardCreation extends TestBase {
         int boardCountAfterCreation= app.getBoard().getBoardCount();
         Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
     }
+
+    @Test(groups = {"logs"},invocationCount = 1)
+    public void boardCreationTestNew(Board board) throws InterruptedException {
+        Board boards = Board.builder().title("testQa31").build();
+
+        logger.info("Board creation : --->"+ board.toString());
+
+        int boardCountBeforeCreation= app.getBoard().getBoardCount();
+        app.getBoard().initBoardCreationFromHeader();
+        //app.getBoard().fillBoardCreationForm("testQa31");
+        app.getBoard().fillBoardCreationForm(boards);
+        app.getBoard().scrollDownTheForm();
+        app.getBoard().submitBoardCreation();
+        app.getBoard().isCreated();
+        app.getBoard().returnToHomePage();
+
+        int boardCountAfterCreation= app.getBoard().getBoardCount();
+        Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
+    }
+
     @Test(dataProvider = "boardData", dataProviderClass = MyDataProvider.class)
     public void boardCreationTest2(String boardName) throws InterruptedException {
 

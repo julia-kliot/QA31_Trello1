@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke">
+    <test name="log">
+        <classes>
+
+
+            <class name="tests_trello.BoardDeletion"/>
+
+
+        </classes>
+    </test>
+</suite>
