@@ -25,17 +25,7 @@ public class MyDataProvider {
 
         return list.iterator();
     }
-    public static Iterator<Object[]> boardDataModel(){
 
-        List<Object[]> list = new ArrayList<>();
-
-        list.add(new Object[]{Board.builder().title("test1.1").build()});
-        list.add(new Object[]{Board.builder().title("test2.2").build()});
-        //list.add(new Object[]{Board.builder().title("test3.3").build()});
-
-
-        return list.iterator();
-    }
     @DataProvider
     public static Iterator<Object[]> dataCardCSV() throws IOException {
         List<Object[]> list = new ArrayList<>();
@@ -46,7 +36,7 @@ public class MyDataProvider {
             String[] split = line.split(",");
             list.add(new Object[]{Card.builder()
                     .cardName(split[0])
-                    .color(split[1])});
+                    .color(split[1]).build()});
             line = reader.readLine();
 
         }

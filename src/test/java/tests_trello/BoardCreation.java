@@ -3,11 +3,25 @@ package tests_trello;
 import manager.MyDataProvider;
 import models.Board;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class BoardCreation extends TestBase {
 
-    @Test(dataProvider = "boardDataModel",dataProviderClass = MyDataProvider.class)
+    @DataProvider
+    public static Object[][] boardDataModel() {
+        List<Object[]> list = new ArrayList<>();
+
+        list.add(new Object[]{Board.builder().title("test1.1").build()});
+        list.add(new Object[]{Board.builder().title("test2.2").build()});
+        return new Object[][]{};
+    }
+
+    @Test(dataProvider = "boardDataModel")
     public void boardCreationTest(Board board) throws InterruptedException {
  //Board board = Board.builder().title("testQa31").build();
 
@@ -40,4 +54,14 @@ public class BoardCreation extends TestBase {
         int boardCountAfterCreation= app.getBoard().getBoardCount();
         Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
     }
+
+
+        //List<Object[]> list = new ArrayList<>();
+
+        //list.add(new Object[]{Board.builder().title("test1.1").build()});
+        //list.add(new Object[]{Board.builder().title("test2.2").build()});
+        //list.add(new Object[]{Board.builder().title("test3.3").build()});
+
+        //return list.iterator();
+
 }
