@@ -17,8 +17,8 @@ public class CardCreation extends TestBase{
         app.getCard().submitCreation();
     }
 
-    @Test(groups = {"logs"},invocationCount = 1)
-    public void cardCreationNew(Card card){
+    @Test
+    public void cardCreationNew(){
         Card cards = Card.builder().cardName("Test1/1").color("green").build();
         app.getBoard().clickOnFirstBoard();
         app.getList().createList("Test_QA31.1");
