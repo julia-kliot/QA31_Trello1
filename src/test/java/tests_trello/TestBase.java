@@ -22,13 +22,13 @@ public class TestBase {
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
-    @BeforeSuite(alwaysRun = true)
+    @BeforeSuite
     public void setUp() throws InterruptedException {
         app.init();
 
     }
 
-    @AfterSuite(alwaysRun = true)
+    @AfterSuite
     public void  tearDown(){
         app.stop();
     }

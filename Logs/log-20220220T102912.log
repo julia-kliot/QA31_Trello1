@@ -1,0 +1,3 @@
+10:29:15  INFO  tests_trello.TestBase - Start test--->testBoardDeletion
+10:29:15  INFO  tests_trello.TestBase - ****************************************************************************************************************
+10:29:15  INFO  manager.ApplicationManager - Tests are finished

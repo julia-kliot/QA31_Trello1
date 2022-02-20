@@ -21,7 +21,7 @@ public class BoardCreation extends TestBase {
         return new Object[][]{};
     }
 
-    @Test(dataProvider = "boardDataModel")
+    @Test(dataProvider = "boardDataModel",enabled = false)
     public void boardCreationTest(Board board) throws InterruptedException {
  //Board board = Board.builder().title("testQa31").build();
 
@@ -40,11 +40,11 @@ public class BoardCreation extends TestBase {
         Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
     }
 
-    @Test(groups = {"logs"},invocationCount = 1)
-    public void boardCreationTestNew(Board board) throws InterruptedException {
+    @Test
+    public void boardCreationTestNew() throws InterruptedException {
         Board boards = Board.builder().title("testQa31").build();
 
-        logger.info("Board creation : --->"+ board.toString());
+        logger.info("Board creation : --->"+ boards.toString());
 
         int boardCountBeforeCreation= app.getBoard().getBoardCount();
         app.getBoard().initBoardCreationFromHeader();
@@ -59,7 +59,7 @@ public class BoardCreation extends TestBase {
         Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
     }
 
-    @Test(dataProvider = "boardData", dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "boardData", dataProviderClass = MyDataProvider.class, enabled = false)
     public void boardCreationTest2(String boardName) throws InterruptedException {
 
         int boardCountBeforeCreation= app.getBoard().getBoardCount();

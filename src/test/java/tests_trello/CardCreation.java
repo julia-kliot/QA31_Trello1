@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class CardCreation extends TestBase{
 
 
-    @Test(dataProvider = "dataCardCSV",dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "dataCardCSV",dataProviderClass = MyDataProvider.class, enabled = false)
     public void cardCreation(Card card){
        // Card card = Card.builder().cardName("Test1/1").color("green").build();
         app.getBoard().clickOnFirstBoard();
