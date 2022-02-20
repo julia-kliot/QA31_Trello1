@@ -40,7 +40,7 @@ public class BoardCreation extends TestBase {
         Assert.assertEquals(boardCountAfterCreation,boardCountBeforeCreation + 1 );
     }
 
-    @Test
+    @Test (groups = {"logs"},invocationCount = 1)
     public void boardCreationTestNew() throws InterruptedException {
         Board boards = Board.builder().title("testQa31").build();
 
