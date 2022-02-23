@@ -14,7 +14,7 @@ public class AtlassianHelper extends  HelperBase {
     public void initChangePhoto() {
         new Actions(wd).moveToElement(wd.findElement(new By.ByCssSelector("[data-test-selector='profile-hover-info']")))
                 .pause(3).click(wd.findElement(By.cssSelector(".css-1ujqpe8"))).perform();
-        click(By.cssSelector("//*[@role='menuitem'] [1]"));
+        click(By.xpath("//*[@role='menuitem'] [1]"));
     }
 
 

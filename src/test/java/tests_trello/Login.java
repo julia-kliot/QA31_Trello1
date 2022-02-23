@@ -27,7 +27,7 @@ public void preConditions() {
         //app.getUser().fillLoginForm("juliakliot.jk@gmail.com", "misha240613");
         app.getUser().fillLoginForm(user);
         app.getUser().submitLogin();
-        app.getUser().isLoggedSuccess();//Thread.sleep(5000);
+      app.getUser().isLoggedSuccess();//Thread.sleep(5000);
 
         Assert.assertTrue(app.getUser().isLoggedSuccess());
 

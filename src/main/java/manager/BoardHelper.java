@@ -39,11 +39,11 @@ public class BoardHelper extends HelperBase{
     }
     public boolean isCreated(){
         WebDriverWait wait= new WebDriverWait(wd,20);
-        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".js-add-list"))));
-        return wd.findElement(By.cssSelector(".js-add-list")).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".icon-sm icon-add"))));
+        return wd.findElement(By.cssSelector(".icon-sm icon-add")).isDisplayed();
     }
     public void returnToHomePage(){
-        click(By.cssSelector("._9Bfh6AVH84yAZe"));
+        click(By.cssSelector("._2ft40Nx3NZII2i"));
     }
      public int getBoardCount(){
         return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-1-recentlyViewedBoards();

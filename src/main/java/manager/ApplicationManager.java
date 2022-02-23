@@ -34,12 +34,12 @@ public class ApplicationManager {
         } else if (browser.equals(BrowserType.EDGE)) {
             wd = new EventFiringWebDriver(new EdgeDriver());
         }
-        ChromeOptions chromeOptions = new ChromeOptions();
-        WebDriverManager.chromedriver().setup();
+        //ChromeOptions chromeOptions = new ChromeOptions();
+        //WebDriverManager.chromedriver().setup();
         //wd = new ChromeDriver();
 
-        wd = new EventFiringWebDriver(new ChromeDriver() ) ;
-        //System.setProperty("webdriver.chrome.driver", "C:/Users/julia/Documents/QA/QA_Automation/QA/QA31_Trello1/chromedriver.exe");
+        //wd = new EventFiringWebDriver(new ChromeDriver() ) ;
+        System.setProperty("webdriver.chrome.driver", "C:/Users/julia/Documents/QA/QA_Automation/QA/QA31_Trello1/chromedriver.exe");
         logger.info("Tests starts");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -56,9 +56,9 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        logger.info("Tests are finished");
-        wd.close();
-        wd.quit();
+       // logger.info("Tests are finished");
+       // wd.close();
+       // wd.quit();
     }
 
     public AtlassianHelper getAtlassian() {

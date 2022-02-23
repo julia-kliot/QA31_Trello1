@@ -1,0 +1,20 @@
+13:39:55  INFO  manager.ApplicationManager - Tests starts
+13:41:05  INFO  tests_trello.TestBase - Start test--->boardCreationTestNew
+13:41:05  INFO  tests_trello.TestBase - Board creation : --->Board(title=testQa31)
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-button']
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-button'] --- was found
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [aria-label='BoardIcon']
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [aria-label='BoardIcon'] --- was found
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-popover']
+13:41:05  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-popover'] --- was found
+13:41:06  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-submit-button']
+13:41:06  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-submit-button'] --- was found
+13:41:06  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2ft40Nx3NZII2i
+13:41:06  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2ft40Nx3NZII2i --- was found
+13:41:07  INFO  tests_trello.TestBase - ****************************************************************************************************************
