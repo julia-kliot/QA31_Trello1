@@ -1,0 +1,25 @@
+23:26:33  INFO  manager.ApplicationManager - Tests starts
+23:27:04  INFO  tests_trello.TestBase - Start test--->testBoardDeletion
+23:27:04  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+23:27:05  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+23:27:05  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+23:27:15  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li --- was found
+23:27:15  INFO  manager.MyListener - The element with locator---By.cssSelector: .board-tile-details
+23:27:15  INFO  manager.MyListener - The element with locator---By.cssSelector: .board-tile-details --- was found
+23:27:15  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-show-sidebar
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-show-sidebar --- was found
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-open-more
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-open-more --- was found
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-close-board
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-close-board --- was found
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-confirm
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-confirm --- was found
+23:27:16  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='close-board-delete-board-button']
+23:27:17  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='close-board-delete-board-button'] --- was found
+23:27:27  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='close-board-delete-board-confirm-button']
+23:27:27  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='close-board-delete-board-confirm-button'] --- was found
+23:27:27  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+23:27:29  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+23:27:29  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+23:27:39  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li --- was found
+23:27:39  INFO  tests_trello.TestBase - ****************************************************************************************************************

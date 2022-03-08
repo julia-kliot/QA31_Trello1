@@ -1,0 +1,38 @@
+19:55:24  INFO  manager.ApplicationManager - Tests starts
+19:55:56  INFO  tests_trello.TestBase - Start test--->loginTest1
+19:55:56  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-member-menu-button'
+19:55:56  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-member-menu-button' --- was found
+19:55:56  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-member-menu-button'
+19:55:56  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-member-menu-button' --- was found
+19:55:56  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-member-menu-logout']
+19:55:56  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-member-menu-logout'] --- was found
+19:55:57  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-testid='logout-button']
+19:55:57  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-testid='logout-button'] --- was found
+19:55:58  INFO  tests_trello.TestBase - Test Login Positive 1juliakliot.jk@gmail.com misha240613
+19:55:58  INFO  manager.MyListener - The element with locator---By.cssSelector: [href='/login']
+19:56:02  INFO  manager.MyListener - The element with locator---By.cssSelector: [href='/login'] --- was found
+19:56:02  INFO  manager.MyListener - The element with locator---By.cssSelector: #user
+19:56:03  INFO  manager.MyListener - The element with locator---By.cssSelector: #user --- was found
+19:56:03  INFO  manager.MyListener - The element with locator---By.cssSelector: #user
+19:56:03  INFO  manager.MyListener - The element with locator---By.cssSelector: #user --- was found
+19:56:03  INFO  manager.MyListener - The element with locator---By.cssSelector: #user
+19:56:03  INFO  manager.MyListener - The element with locator---By.cssSelector: #user --- was found
+19:56:08  INFO  manager.MyListener - The element with locator---By.cssSelector: #login
+19:56:08  INFO  manager.MyListener - The element with locator---By.cssSelector: #login --- was found
+19:56:09  INFO  manager.MyListener - The element with locator---By.name: password
+19:56:09  INFO  manager.MyListener - The element with locator---By.name: password --- was found
+19:56:10  INFO  manager.MyListener - The element with locator---By.name: password
+19:56:10  INFO  manager.MyListener - The element with locator---By.name: password --- was found
+19:56:10  INFO  manager.MyListener - The element with locator---By.name: password
+19:56:10  INFO  manager.MyListener - The element with locator---By.name: password --- was found
+19:56:10  INFO  manager.MyListener - The element with locator---By.cssSelector: #login-submit
+19:56:10  INFO  manager.MyListener - The element with locator---By.cssSelector: #login-submit --- was found
+19:56:10  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs --- was found
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs --- was found
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs --- was found
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs
+19:56:16  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2rcHhualJmVHjs --- was found
+19:56:16  INFO  tests_trello.TestBase - ****************************************************************************************************************

@@ -17,10 +17,10 @@ public class UserHelper extends HelperBase{
     }
     public boolean isLoggedSuccess(){
         WebDriverWait wait= new WebDriverWait(wd,10);
-        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("._2rcHhualJmVHjs"))));
-        return wd.findElement(By.cssSelector("._2rcHhualJmVHjs")).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("._2ft40Nx3NZII2i"))));
+        return wd.findElement(By.cssSelector("._2ft40Nx3NZII2i")).isDisplayed();
     }
-   // _2rcHhualJmVHjs
+
     public void submitLogin() {
         click(By.cssSelector("#login-submit"));
     }

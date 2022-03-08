@@ -18,7 +18,7 @@ public void preConditions() {
 }
 
 
-    @Test (groups = {"logs"},invocationCount = 1)
+    @Test
     public void loginTest1() throws InterruptedException {
 //User user= new User().withEmail("juliakliot.jk@gmail.com").withPassword("misha240613");
         User user = User.builder().email("juliakliot.jk@gmail.com").password("misha240613").build();

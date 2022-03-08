@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="logng">
+<suite name="log">
     <test name="log">
         <classes>
             <class name="tests_trello.Login"/>

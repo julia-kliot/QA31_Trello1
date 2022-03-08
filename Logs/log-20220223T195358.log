@@ -1,0 +1,25 @@
+19:54:01  INFO  manager.ApplicationManager - Tests starts
+19:54:33  INFO  tests_trello.TestBase - Start test--->cardCreationNew
+19:54:33  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+19:54:33  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+19:54:33  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-add-list
+19:54:43  INFO  manager.MyListener - We have a 'trowable'--no such element: Unable to locate element: {"method":"css selector","selector":".js-add-list"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c114f84fff2be9074489d7ff37bfbdf
+*** Element info: {Using=css selector, value=.js-add-list}
+19:54:43  INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".js-add-list"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c114f84fff2be9074489d7ff37bfbdf
+*** Element info: {Using=css selector, value=.js-add-list}
+19:54:43  INFO  manager.MyListener - This is link of 'your screen' with error--scr/test/screenshots/screen3283.png
+19:54:43  INFO  tests_trello.TestBase - ****************************************************************************************************************

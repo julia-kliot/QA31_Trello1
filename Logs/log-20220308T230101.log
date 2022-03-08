@@ -1,0 +1,28 @@
+23:01:03  INFO  manager.ApplicationManager - Tests starts
+23:02:13  INFO  tests_trello.TestBase - Start test--->boardCreationTestNew
+23:02:14  INFO  tests_trello.TestBase - Board creation : --->Board(title=testQa31)
+23:02:14  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+23:02:14  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+23:02:14  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+23:02:24  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li --- was found
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-button']
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-button'] --- was found
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [aria-label='BoardIcon']
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [aria-label='BoardIcon'] --- was found
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-popover']
+23:02:24  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-popover'] --- was found
+23:02:25  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-submit-button']
+23:02:25  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-submit-button'] --- was found
+23:02:30  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2ft40Nx3NZII2i
+23:02:30  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2ft40Nx3NZII2i --- was found
+23:02:30  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+23:02:30  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+23:02:30  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+23:02:40  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li --- was found
+23:02:40  INFO  tests_trello.TestBase - ****************************************************************************************************************
