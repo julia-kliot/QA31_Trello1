@@ -5,7 +5,7 @@
 
 
             <class name="tests_trello.BoardCreation"/>
-
+            <class name="tests_trello.BoardDeletion"/>
 
         </classes>
     </test>

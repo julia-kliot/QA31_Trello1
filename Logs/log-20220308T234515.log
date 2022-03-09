@@ -1,0 +1,3 @@
+23:45:16  INFO  manager.ApplicationManager - Tests starts
+23:45:16  INFO  tests_trello.TestBase - Start test--->boardCreationTestNew
+23:45:16  INFO  tests_trello.TestBase - ****************************************************************************************************************

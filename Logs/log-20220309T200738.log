@@ -1,0 +1,60 @@
+20:07:41  INFO  manager.ApplicationManager - Tests starts
+20:08:15  INFO  tests_trello.TestBase - Start test--->boardCreationTestNew
+20:08:15  INFO  tests_trello.TestBase - Board creation : --->Board(title=testQa31)
+20:08:15  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+20:08:15  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+20:08:15  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+20:08:25  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li --- was found
+20:08:25  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-button']
+20:08:25  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-button'] --- was found
+20:08:25  INFO  manager.MyListener - The element with locator---By.cssSelector: [aria-label='BoardIcon']
+20:08:25  INFO  manager.MyListener - The element with locator---By.cssSelector: [aria-label='BoardIcon'] --- was found
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input']
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-title-input'] --- was found
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-popover']
+20:08:26  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='header-create-menu-popover'] --- was found
+20:08:28  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-submit-button']
+20:08:28  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='create-board-submit-button'] --- was found
+20:08:33  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2ft40Nx3NZII2i
+20:08:33  INFO  manager.MyListener - The element with locator---By.cssSelector: ._2ft40Nx3NZII2i --- was found
+20:08:33  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item
+20:08:34  INFO  manager.MyListener - The element with locator---By.cssSelector: .boards-page-board-section-list-item --- was found
+20:08:34  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+20:08:34  INFO  manager.MyListener - The element with locator---By.xpath: //*[contains(@class,'icon-clock')]/../../..//li --- was found
+20:08:34  INFO  tests_trello.TestBase - ****************************************************************************************************************
+20:08:34  INFO  tests_trello.TestBase - Start test--->testBoardDeletion
+20:08:34  INFO  manager.MyListener - The element with locator---By.cssSelector: .board-tile-details
+20:08:34  INFO  manager.MyListener - The element with locator---By.cssSelector: .board-tile-details --- was found
+20:08:34  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-show-sidebar
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-show-sidebar --- was found
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-open-more
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-open-more --- was found
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-close-board
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-close-board --- was found
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-confirm
+20:08:35  INFO  manager.MyListener - The element with locator---By.cssSelector: .js-confirm --- was found
+20:08:36  INFO  manager.MyListener - The element with locator---By.cssSelector: [data-test-id='close-board-delete-board-button']
+20:08:46  INFO  manager.MyListener - We have a 'trowable'--no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='close-board-delete-board-button']"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54fa35cf6068f649ddd27e5beb9ea722
+*** Element info: {Using=css selector, value=[data-test-id='close-board-delete-board-button']}
+20:08:46  INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='close-board-delete-board-button']"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54fa35cf6068f649ddd27e5beb9ea722
+*** Element info: {Using=css selector, value=[data-test-id='close-board-delete-board-button']}
+20:08:46  INFO  manager.MyListener - This is link of 'your screen' with error--scr/test/screenshots/screen526.png
+20:08:47  INFO  tests_trello.TestBase - ****************************************************************************************************************
